@@ -3,8 +3,8 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
 from typing import Optional
-from .utils import extract_info, check_inventory, send_email
-from .db import save_conversation, init_db, get_conversation
+from utils import extract_info, check_inventory, send_email
+from db import save_conversation, init_db, get_conversation
 
 app = FastAPI()
 
